@@ -1,14 +1,16 @@
-// Internet Explorer 6-11
-const isIE = /*@cc_on!@*/ false || !!document.documentMode
-
-// Edge 20+
-const isEdge = !isIE && !!window.StyleMedia
-
 export const generateColor = () => {
-  if (isEdge) {
-    return "#" + Math.random().toString(16).substr(-6)
+  // Wrap the require in check for window
+  if (typeof window !== `undefined`) {
+    // Internet Explorer 6-11
+    const isIE = /*@cc_on!@*/ false || !!document.documentMode
+
+    // Edge 20+
+    const isEdge = !isIE && !!window.StyleMedia
+    if (isEdge) {
+      return "#" + Math.random().toString(16).substr(-6)
+    }
+    return "#" + Math.random().toString(16).substr(-6) + "99"
   }
-  return "#" + Math.random().toString(16).substr(-6) + "99"
 }
 
 // Browser Detection //
