@@ -10,11 +10,13 @@ import WebDeveloper from "../assets/web-developer.svg"
 import Wrapper from "../components/wrapper"
 import ProjectItems from "../components/projectsItem"
 import SkillItems from "../components/skillItems"
+import WorkItems from "../components/workItems"
+import CertItems from "../components/certItems"
 import About from "../components/about"
 
 const SectionTitle = styled.h3`
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 `
 
 const IndexPage = () => (
@@ -32,8 +34,16 @@ const IndexPage = () => (
       </div>
     </HomeHero>
     <Wrapper>
+      <SectionTitle id="learning">Learning</SectionTitle>
+      <CertItems />
+    </Wrapper>
+    <Wrapper>
       <SectionTitle id="projects">Projects</SectionTitle>
       <ProjectItems />
+    </Wrapper>
+    <Wrapper>
+      <SectionTitle id="work">Work</SectionTitle>
+      <WorkItems />
     </Wrapper>
     <Wrapper>
       <SectionTitle id="skills">Skills</SectionTitle>
