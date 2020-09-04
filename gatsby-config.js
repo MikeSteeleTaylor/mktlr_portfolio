@@ -1,5 +1,4 @@
 module.exports = {
-  // pathPrefix: "/mktlr_portfolio",
   siteMetadata: {
     title: `Mike Steele Taylor | Portfolio`,
     description: `The developer portfolio of Mike Steele Taylor`,
@@ -37,6 +36,15 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    },
+    "babel-plugin-styled-components",
+    // {
+    //   namespace: "mktlr",
+    // },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

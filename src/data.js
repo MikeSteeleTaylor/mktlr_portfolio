@@ -15,7 +15,7 @@ export const projects = [
   },
   {
     name: "Developer Portfolio",
-    url: "https://github.com/MikeSteeleTaylor/mikesteeletaylor.github.io",
+    url: "https://github.com/MikeSteeleTaylor/mktlr_portfolio",
   },
   {
     name: "Covid-19 Register",
@@ -26,6 +26,64 @@ export const projects = [
     url: "https://github.com/MikeSteeleTaylor/Python-Blockchain",
   },
 ]
+
+export const jobs = [
+  {
+    name: "Craig Bryant",
+    url: "#",
+    image: "CBWebLogo.png",
+  },
+  {
+    name: "Downs Farm Fresh",
+    url: "#",
+    image: "DFF_website_lrg.png",
+  },
+  {
+    name: "Lasso Group",
+    url: "#",
+    image: "LGLogo_V_Retina.png",
+  },
+  {
+    name: "Shamanic Earth Medicine",
+    url: "#",
+    image: "SEM_final-logo_rgb.png",
+  },
+]
+
+export const certs = [
+  {
+    name: "React Complete Guide",
+    url: "#",
+    image: "certImage1.jpg",
+  },
+  {
+    name: "Web Dev Bootcamp",
+    url: "#",
+    image: "certImage2.jpg",
+  },
+  {
+    name: "Complete Python Web Course",
+    url: "#",
+    image: "certImage3.jpg",
+  },
+  {
+    name: "Python Crypto/Blockchain Course",
+    url: "#",
+    image: "certImage4.jpg",
+  },
+]
+
+const n = 47
+
+export const jobsPH = [...Array(n)].map((e, i) => {
+  if (i !== 0) {
+    jobs.push({
+      name: "parkHotel" + i,
+      url: "#",
+      image: "park-hotel-" + i + ".jpg",
+    })
+  }
+})
 
 export const skills = [
   {

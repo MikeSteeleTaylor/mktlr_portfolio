@@ -2,6 +2,14 @@ import React from "react"
 // import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import styled from "styled-components/macro"
+
+const P = styled.p`
+  padding-left: 30px;
+  @media (max-width: 768px) {
+    padding: 30px 0 30px 20px;
+  }
+`
 
 const Mike = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +38,7 @@ const About = () => {
       <div style={{ width: `400px` }}>
         <Mike />
       </div>
-      <p style={{ paddingLeft: `30px` }}>lorem ipsum...</p>
+      <P>This is me... a few years ago... ahem ;)</P>
     </>
   )
 }
