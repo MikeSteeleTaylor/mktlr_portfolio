@@ -12,6 +12,7 @@ const SectionWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: space-evenly;
 `
 
 const Wrapper = props => <SectionWrapper>{props.children}</SectionWrapper>

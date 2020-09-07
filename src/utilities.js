@@ -1,5 +1,3 @@
-import { jobs } from "./data"
-
 export const generateColor = () => {
   // Wrap the require in check for window
   // if (typeof window !== `undefined`) {

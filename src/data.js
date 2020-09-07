@@ -83,6 +83,7 @@ export const jobsPH = [...Array(n)].map((e, i) => {
       image: "park-hotel-" + i + ".jpg",
     })
   }
+  return null
 })
 
 export const skills = [

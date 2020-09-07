@@ -3,11 +3,6 @@ import styled from "styled-components/macro"
 import { certs } from "../data"
 import Image from "../components/image"
 
-const A = styled.a`
-  color: black;
-  text-decoration: none;
-`
-
 const Cert = styled.div`
   margin: 20px;
   width: 200px;

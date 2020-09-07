@@ -4,11 +4,6 @@ import { jobs } from "../data"
 import Image from "../components/image"
 import { jobsPH } from "../data"
 
-const A = styled.a`
-  color: black;
-  text-decoration: none;
-`
-
 const Job = styled.div`
   margin: 20px;
   width: 200px;
@@ -53,15 +48,5 @@ const WorkItems = () => {
     </>
   )
 }
-
-// {
-//   const projectGallery = projects.map(project => {
-//     ;<a href={project.url}>
-//       <Project>
-//         <h3>{project.name}</h3>
-//       </Project>
-//     </a>
-//   })
-// }
 
 export default WorkItems
