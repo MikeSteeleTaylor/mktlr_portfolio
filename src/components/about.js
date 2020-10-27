@@ -38,7 +38,6 @@ const About = () => {
       <div style={{ width: `400px` }}>
         <Mike />
       </div>
-      <P>This is me... a few years ago... ahem ;)</P>
     </>
   )
 }
